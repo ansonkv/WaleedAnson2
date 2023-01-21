@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="0dp"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|snap"
+        app:titleTextColor="@color/colorPrimary">
+
+        <include layout="@layout/toolbar_product_details" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="68dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@drawable/bg_primary_dark_rignt_curve"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:rotation="270">
+
+                    <com.waleed.app.util.rangeseekba.CrystalRangeSeekbar
+                        android:id="@+id/range_seek"
+                        android:layout_width="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:bar_color="#AEAEAE"
+                        app:bar_height="8dp"
+                        app:bar_highlight_color="#E95D00"
+                        app:bar_highlight_gradient_end="#E95D00"
+                        app:bar_highlight_gradient_start="#ffe200"
+                        app:corner_radius="10"
+                        app:data_type="_integer"
+                        app:left_thumb_image="@drawable/ic_seek_thumb"
+                        app:max_start_value="60"
+                        app:max_value="1000"
+                        app:min_value="0"
+                        app:right_thumb_image="@drawable/ic_seek_thumb"
+                        app:steps="1" />
+
+                    <TextView
+                        android:id="@+id/tv_seek_min_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/range_seek"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:rotation="90"
+                        android:text="1 KWD"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_seek_max_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/range_seek"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:rotation="90"
+                        android:text="1 KWD"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_category_values"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/marginProductDetails"
+            android:layout_marginEnd="@dimen/marginProductDetails"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/frame_message"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_orange_btn_curve"
+                android:fontFamily="@font/open_sans_bold"
+                android:paddingStart="44dp"
+                android:paddingEnd="44dp"
+                android:text="@string/reset_string"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_apply"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/frame_message"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_orange_btn_curve"
+                android:fontFamily="@font/open_sans_bold"
+                android:paddingStart="44dp"
+                android:paddingEnd="44dp"
+                android:text="@string/apply_string"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

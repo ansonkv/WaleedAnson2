@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.aminography:choosephotohelper:1.0.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd2f22b3c8f85b12f0e800cc1c54602e/jetified-choosephotohelper-1.0.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd2f22b3c8f85b12f0e800cc1c54602e/jetified-choosephotohelper-1.0.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd2f22b3c8f85b12f0e800cc1c54602e/jetified-choosephotohelper-1.0.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6263b620fb898849407d7ed73aa99ab/jetified-choosephotohelper-1.0.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6263b620fb898849407d7ed73aa99ab/jetified-choosephotohelper-1.0.6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6263b620fb898849407d7ed73aa99ab/jetified-choosephotohelper-1.0.6/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/840fea2dd0d612de5b8f2fb9d4fb2dc7/jetified-choosephotohelper-1.0.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/840fea2dd0d612de5b8f2fb9d4fb2dc7/jetified-choosephotohelper-1.0.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/840fea2dd0d612de5b8f2fb9d4fb2dc7/jetified-choosephotohelper-1.0.6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.aminography/choosephotohelper/1.0.6/a659132bd094eb78d8308326a969d0428ec1616c/choosephotohelper-1.0.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.aminography/choosephotohelper/1.0.6/9b891c5db3105c655348ffdd120ec61f787ba891/choosephotohelper-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,211 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.waleed.app">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Waleed"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_app_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCzv6o6_PG8VisrijdtS15wHNqwvtf4e94" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.productlist.ProductListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.productdetails.ProductDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle"></activity>
+        <activity
+            android:name=".ui.reviews.ReviewsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.stores.StoresActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.cart.CartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.wrap.WrapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.checkout.CheckoutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.payment.PaymentSuccess"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.address.list.AddressListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.address.newaddress.NewAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.address.mappickup.LocationMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.account.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.account.signin.SignInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.account.terms.TermsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.account.RefundPolicyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.account.PrivacyPolicyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.notification.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.orders.list.OrdersListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+
+        <activity
+            android:name=".ui.account.contactus.ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.orders.details.OrderDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+
+        <activity
+            android:name=".ui.rate.OrderRateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+
+        <activity
+            android:name=".ui.filter.SearchFilterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle"></activity>
+        <activity
+            android:name=".ui.account.forgotpassword.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.account.changepass.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+
+        <activity
+            android:name=".ui.subcategory.SubCategoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.cart.store.CartStoreActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.payment.PaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.favourite.FavouriteProductListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.productdetails.SingleImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.account.edit.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+        <activity
+            android:name=".ui.account.birthday.list.BirthdayListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+
+        <activity
+            android:name=".ui.account.birthday.newchild.NewChildActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WindowWithoutTitle" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+</manifest>

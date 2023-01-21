@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/marginProductDetails"
+            android:background="@drawable/bg_orange_btn_curve"
+            android:text="@string/login_text"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/marginProductDetails"
+            android:background="@drawable/bg_orange_btn_curve"
+            android:text="@string/register_text"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_profile"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">"ansofn@testsd.com",
+        <include layout="@layout/profile_fragment"/>
+    </LinearLayout>
+</RelativeLayout>

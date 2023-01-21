@@ -1,0 +1,256 @@
+<resources>
+    <string name="app_name">Waleed Toys</string>
+    <string name="oke_text">OK</string>
+
+    <!-- SPlash Screen-->
+    <string name="english_string">English</string>
+    <string name="arabic_string">عربى</string>
+    <string name="no_network_message">No Network!!! \nPlease try Again</string>
+    <!--Home Page-->
+    <string name="home_string">Home</string>
+    <string name="category_string">Categories</string>
+    <string name="profile_string">Profile</string>
+    <string name="featured_string">Featured</string>
+    <string name="boys_string">Boys</string>
+    <string name="girls_string">Girls</string>
+    <string name="featured_products_string">Featured Products</string>
+    <string name="categories_string">Categories</string>
+    <string name="in_stock_string">In Stock</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="colors_string">Color</string>
+
+    <!--Product Details PAge-->
+    <string name="collect_from_store_string">Collect from Store</string>
+    <string name="about_the_product_string">About the Product</string>
+    <string name="brand_string">Brand</string>
+    <string name="manufacturer_string">Manufacturer</string>
+    <string name="tags_string">Tags</string>
+    <string name="view_more_string">View More</string>
+    <string name="related_products_string">Related Products</string>
+    <string name="reviews_string">Reviews</string>
+    <string name="add_to_cart_string">Add to Cart</string>
+    <string name="item_in_cart">Item In Cart</string>
+    <string name="done_string">Done</string>
+    <string name="store_desc">You can order it online &amp; pick it up from showroom</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="checkout">Checkout</string>
+    <string name="cart_text">Cart</string>
+    <string name="wrap_my_selection">Wrap my Selection</string>
+    <string name="cancel_string">Cancel</string>
+    <string name="select_for_wrap_string">Select for wrap</string>
+    <string name="change_string">Change</string>
+    <string name="deliver_to_my_location_text">Deliver to my location</string>
+    <string name="checkout_string">Checkout</string>
+    <string name="gift_wrap_text">Gift Wrap</string>
+    <string name="type_of_paper_choices">Type of Paper Choices</string>
+    <string name="message_string">Message</string>
+    <string name="submit_string">Submit</string>
+    <string name="check_out_string">Checkout</string>
+    <string name="edit_string">Edit</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="delivery_method">Delivery Method</string>
+    <string name="regular_delivery">Regular Delivery</string>
+    <string name="express_delivery">Express Delivery</string>
+    <string name="customize_date">Customize Date</string>
+    <string name="prefered_delivery_time">Preferred Delivery Time</string>
+    <string name="prefered_delivery_date">Preferred Delivery Date</string>
+
+    <string name="add_new_address_text">Add New Address</string>
+    <string name="select_text">Select</string>
+    <string name="addresses_text">Addresses</string>
+    <string name="apartment_string">Apartment</string>
+    <string name="title_string">Title</string>
+    <string name="governorate_string">Governorate</string>
+    <string name="area_string">Area</string>
+    <string name="block_string">Block</string>
+    <string name="Street_string">Street</string>
+    <string name="building_no_string">Building No.</string>
+    <string name="floor_no_string">Floor No.</string>
+    <string name="flat_no_string">Flat No.</string>
+    <string name="direction_string">Direction</string>
+    <string name="pick_location_string">Pick Location</string>
+    <string name="confirm_location">Confirm Location</string>
+
+    <!--Login Register-->
+    <string name="email_string">Email</string>
+    <string name="password_string">Password</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="sign_up_string">Sign Up</string>
+    <string name="name_string">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="mobile_string">Mobile</string>
+    <string name="enter_valid_name_string">Enter Valid Name</string>
+    <string name="enter_valid_email_string">Enter Valid Email</string>
+    <string name="enter_valid_password_string">Enter Valid Password</string>
+    <string name="enter_current_password">Enter your current password</string>
+    <string name="enter_your_new_password">Enter your new password</string>
+    <string name="new_password_should_match">Your new passwords must be same</string>
+    <string name="yes_string">Yes</string>
+    <string name="no_string">No</string>
+    <string name="log_out_message">Do you want to logout?</string>
+
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+    <string name="my_order_string">My Order</string>
+    <string name="my_address_string">My Address</string>
+    <string name="notificatoin_string">Notification</string>
+    <string name="terms_and_condition_string">Terms and Conditions</string>
+    <string name="privacy_policy_string">Privacy Policy</string>
+    <string name="refund_policy_string">Refund Policy</string>
+    <string name="langguage_string">Change Language</string>
+    <string name="change_password">Change Password</string>
+    <string name="push_notification_string">Notification</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="log_out_string">Logout</string>
+
+    <string name="forgot_password_string">Forgot Password</string>
+
+
+    <string name="sign_in_google_text">Sign in with Google</string>
+    <string name="sign_in_facebook_text">Sign in with Facebook</string>
+
+    <string name="dont_have_account_string">Don\'t have an Account?</string>
+    <string name="register_now_string">Register Now</string>
+
+
+    <string name="accept_terms_string">Accept Terms and Condition</string>
+
+    <string name="view_and_rate">View and Rate</string>
+    <string name="view_details">View Details</string>
+    <string name="follow_us_text">Follow Us on</string>
+
+    <string name="order_id_string">Order ID</string>
+    <string name="transaction_type_string">Transaction Type</string>
+    <string name="transaction_id_string">Transaction ID</string>
+    <string name="payment_status_string">Payment Status</string>
+    <string name="total_amount_string">Total Amount</string>
+
+    <string name="grand_amount_string">Grand Amount</string>
+    <string name="delivery_string">Delivery</string>
+    <string name="products_string">Products</string>
+    <string name="rate_string">Rate</string>
+    <string name="rate_order_string">Rate Order</string>
+    <string name="order_details_string">Order Details</string>
+    <string name="rate_the_product_string">Rate the product</string>
+
+    <string name="filter_by_string">Filter By</string>
+    <string name="apply_string">Apply</string>
+    <string name="reset_string">Reset</string>
+    <string name="string_dummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password_string">New Password</string>
+    <string name="confirm_new_password_string">Confirm New Password</string>
+    <string name="save_string">Save</string>
+    <string name="all_string">All</string>
+
+    <string name="empty_list_string">No Item to Display</string>
+    <string name="review_count_string">Reviews ( %s )</string>
+    <string name="size_string">Size - %s</string>
+    <string name="will_close_string">Will close at %s</string>
+    <string name="will_open_string">Will open at %s</string>
+    <string name="unit_price_string">%s KD</string>
+
+    <string name="home_delivery_string">Home Delivery</string>
+    <string name="collect_from_store_string_name">Collect from %s Store</string>
+    <string name="earning_point_message">You will be earning %s Waleed points</string>
+    <string name="item_added_message">%s has been added to the cart</string>
+    <string name="please_login_string">Please Login</string>
+    <string name="login_description_string">You need to login to continue purchase</string>
+    <string name="select_governorate">Select Governorate</string>
+    <string name="select_area_city">Select Your Area</string>
+    <string name="please_enter_title">Please Enter Address Title</string>
+    <string name="please_select_area">Please Select your area</string>
+    <string name="please_select_your_governorate">Please Select Your Governorate</string>
+    <string name="please_enter_your_street">Please Enter your Street</string>
+    <string name="select_address_string">Select Address</string>
+    <string name="please_select_your_address">Please Select the Address</string>
+    <string name="payment_failed_string">Your Payment has been failed!!! \n Try Again</string>
+    <string name="favourite_item_string">Favorites</string>
+    <string name="favourite_products">Favorite Products</string>
+    <string name="order_id_value">Order Id: %s</string>
+    <string name="quanity_value_string">Qnty - %s</string>
+    <string name="discount_code_value">Discount(%s)</string>
+    <string name="price_string">Price</string>
+    <string name="sort_by_string">Sort By</string>
+    <string name="age_group_string">Age Group</string>
+    <string name="shop_for_string">Shop for</string>
+    <string name="rating_string">Rating</string>
+    <string name="ratings_string">Ratings</string>
+    <string name="availability_string">Availability</string>
+    <string name="relevence_string">Relevance</string>
+    <string name="high_to_low_string">High to Low</string>
+    <string name="low_to_high_string">Low to High</string>
+    <string name="five_stars">5 Stars</string>
+    <string name="four_stars">4 Stars and more</string>
+    <string name="three_stars">3 Stars and more</string>
+    <string name="two_stars">2 Stars and more</string>
+    <string name="one_stars">1 Stars and more</string>
+    <string name="show_in_stock_string">Show In Stock</string>
+    <string name="show_all_string">Show All</string>
+    <string name="upload_images_string">Upload Images</string>
+    <string name="please_eneter_your_review">Please Enter Your Review</string>
+    <string name="review_submited_success_string">Your review has been submitted successfully</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="apply_discount">Apply Discount</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="knet_string">KNET</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="total_string">Total</string>
+    <string name="wrapping_string">Wrapping</string>
+    <string name="grand_total_string">Grand Total</string>
+    <string name="thank_you_for_the_order">Thank you for your order</string>
+    <string name="success_string">Success</string>
+    <string name="edit_profile_string">Edit Profile</string>
+    <string name="update_string">Update</string>
+    <string name="enter_valid_phone_number">Enter Valid Phone Number</string>
+    <string name="updated_profile_message">Profile updated successfully</string>
+    <string name="cart_delete_message">Do you want to remove item from cart?</string>
+    <string name="advice_string">Advice</string>
+    <string name="issue_string">Issue</string>
+    <string name="report_type_string">Report Type</string>
+    <string name="enter_valid_message">Please enter your enquiry</string>
+    <string name="equiry_submited_success_string">Your enquiry has been submitted successfully</string>
+    <string name="enter_coupon_code">Enter the Coupon Code</string>
+    <string name="no_wraping_option">No Wrapping Option for Multiple Stores</string>
+    <string name="enter_valid_coupon_code">Enter valid Coupon Code</string>
+    <string name="discount_applied">Discount of %s KD applied to your total</string>
+    <string name="discount_string">Discount</string>
+    <string name="coupon_applied_string">Coupon Applied</string>
+    <string name="on_string">On</string>
+    <string name="off_string">Off</string>
+
+    <string name="facebook_app_id" translatable="false">779920046193607</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb779920046193607</string>
+    <string name="replace_product">Replace Product</string>
+    <string name="replace_string">Replace</string>
+    <string name="replacement_string"  >The replacement product for this is ‘%s’</string>
+    <string name="replacement_wish_message">Do you wish to change?</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="fav_added_msg">%s has added to your favorite list</string>
+    <string name="fave_remove_msg">%s has removed from your list</string>
+    <string name="birthday_gift">Birthday Gift</string>
+    <string name="add_new_child">Add New Child</string>
+    <string name="child_list">Children Names</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="add_child_string">Add Child</string>
+    <string name="please_accept_terms">Please Accept Terms</string>
+    <string name="select_dob">Please Choose Date of Birth</string>
+    <string name="units_available_message">The Current quantity is not available in Stock</string>
+    <string name="remove_item_from_cart_no_stock">Some of the item in your cart is out of stock</string>
+    <string name="update_cart_string">Update Cart</string>
+    <string name="speak_wth_us_string">Speak With Us</string>
+    <string name="existing_email_string">Email already exist</string>
+    <string name="invalid_credentials_string">Invalid EmailID/Password</string>
+    <string name="please_enter_your_building">Please Enter your building</string>
+    <string name="please_enter_your_floor">Please enter your floor</string>
+    <string name="please_enter_your_address">Please enter your address</string>
+    <string name="please_enter_flat_number">Please enter your flat number</string>
+    <string name="please_enter_block">Please enter your block</string>
+    <string name="house_no_string">House No.</string>
+    <string name="free_string">Free</string>
+    <string name="select_varient_string">Select Size</string>
+    <string name="select_size">Select Size</string>
+    <string name="please_select_gift_wrapper">Please Select Gift Wrap Paper</string>
+    <string name="want_to_continue_as_string">Do you want to cotinue as?</string>
+    <string name="guest_string">Guest</string>
+</resources>

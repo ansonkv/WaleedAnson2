@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back_left"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toStartOf="@+id/progress_search"
+            android:layout_toEndOf="@+id/btn_close"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:textColor="@color/textColorDark"
+            android:textColorHint="@color/colorGray"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progress_search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_filter"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:paddingStart="24dp">
+
+    <TextView
+        android:id="@+id/tv_sub_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableStart="@drawable/ic_sub_category"
+        android:drawablePadding="36dp"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:gravity="center_vertical"
+        android:textColor="@color/textColorDark"
+        android:textSize="18sp" />
+
+</LinearLayout>

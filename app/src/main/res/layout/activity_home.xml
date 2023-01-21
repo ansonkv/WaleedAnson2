@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="0dp"
+
+        app:titleTextColor="@color/colorPrimary">
+
+        <include layout="@layout/toolbar_home" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/common_frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_home"
+            style="@style/BottomBarLinearLayout">
+
+            <ImageButton
+                android:id="@+id/btn_home"
+                style="@style/BottomBarImageView"
+                android:src="@drawable/bottom_bar_home_selector" />
+
+            <TextView
+                android:id="@+id/tv_home_text"
+                style="@style/BottomBarTextView"
+                android:text="@string/home_string" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_category"
+            style="@style/BottomBarLinearLayout">
+
+            <ImageButton
+                android:id="@+id/btn_categories"
+                style="@style/BottomBarImageView"
+                android:src="@drawable/bottom_bar_categories_selector" />
+
+            <TextView
+                android:id="@+id/tv_cat_text"
+                style="@style/BottomBarTextView"
+                android:text="@string/category_string" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_profile"
+            style="@style/BottomBarLinearLayout">
+
+            <ImageButton
+                android:id="@+id/btn_profile"
+                style="@style/BottomBarImageView"
+                android:src="@drawable/bottom_bar_profile_selector" />
+
+            <TextView
+                android:id="@+id/tv_profile_text"
+                style="@style/BottomBarTextView"
+                android:text="@string/profile_string" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="0dp"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|snap"
+        app:titleTextColor="@color/colorPrimary">
+
+        <include layout="@layout/toolbar_product_details" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginProductDetails"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/marginProductDetails"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="@string/name_string"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginStart="@dimen/marginProductDetails"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/marginProductDetails"
+                android:background="@drawable/bg_edit_text_white_round"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginProductDetails"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/marginProductDetails"
+
+                android:fontFamily="@font/open_sans_regular"
+                android:text="@string/email_string"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginStart="@dimen/marginProductDetails"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/marginProductDetails"
+                android:background="@drawable/bg_edit_text_white_round"
+                android:gravity="center_vertical"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginProductDetails"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/marginProductDetails"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="@string/mobile_string"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginProductDetails"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/marginProductDetails"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/rl_custom_time"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/spinner_gover"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_edit_text_white_round"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:text="+965"
+                        android:textColor="@color/colorGray" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_time_title"
+                        android:layout_alignBaseline="@id/spinner_gover"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginEnd="24dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_spinner"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1.3"
+                    android:background="@drawable/bg_edit_text_white_round"
+                    android:gravity="center_vertical|start"
+                    android:inputType="phone"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginProductDetails"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/marginProductDetails"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="@string/report_type_string"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginProductDetails"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/marginProductDetails"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/spinner_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_edittext_round"
+                    android:spinnerMode="dropdown" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_time_title"
+                    android:layout_alignBaseline="@id/spinner_reason"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_spinner" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginProductDetails"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/marginProductDetails"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="@string/message_string"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="@dimen/marginProductDetails"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/marginProductDetails"
+
+                android:background="@drawable/bg_edit_text_white_round"
+                android:gravity="start|top"
+                android:inputType="text"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="44dp"
+                android:background="@drawable/bg_orange_btn_curve"
+                android:fontFamily="@font/open_sans_bold"
+                android:paddingStart="44dp"
+                android:paddingEnd="44dp"
+                android:text="@string/submit_string"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/colorLightGray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCallUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_call_us"
+                    android:drawablePadding="24dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:text="@string/speak_wth_us_string"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:gravity="center"
+                android:text="@string/follow_us_text"
+                android:textColor="#1D2226"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/btn_social_facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/social_media_size"
+                        android:layout_height="@dimen/social_media_size"
+                        android:layout_centerHorizontal="true"
+                        android:padding="16dp"
+                        android:src="@drawable/ic_contact_us_fb" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_social_instagram"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/social_media_size"
+                        android:layout_height="@dimen/social_media_size"
+                        android:layout_centerHorizontal="true"
+                        android:padding="16dp"
+                        android:src="@drawable/ic_contact_us_insta" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_social_twitter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginProductDetails"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/social_media_size"
+                        android:layout_height="@dimen/social_media_size"
+                        android:layout_centerHorizontal="true"
+                        android:padding="16dp"
+                        android:src="@drawable/ic_contact_us_twiter" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

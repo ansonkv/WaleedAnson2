@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="0dp"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|snap"
+        app:titleTextColor="@color/colorPrimary">
+
+        <include layout="@layout/toolbar_home" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/thank_you_for_the_order"
+        android:layout_above="@+id/rl_details"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_details"
+        android:layout_margin="@dimen/marginProductDetails"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="@string/order_id_string"/>
+        <TextView
+            android:id="@+id/tv_order_id_value"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_transaction"
+            android:layout_below="@+id/tv_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:text="@string/transaction_type_string"/>
+
+        <TextView
+            android:id="@+id/tv_transaction_value"
+            android:layout_below="@+id/tv_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_transaction_id"
+            android:layout_below="@+id/tv_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:text="@string/transaction_id_string"/>
+        <TextView
+            android:id="@+id/tv_transaction_id_value"
+            android:layout_below="@+id/tv_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+         />
+        <TextView
+            android:id="@+id/tv_payment_status"
+            android:layout_below="@+id/tv_transaction_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:text="@string/payment_status_string"/>
+
+        <TextView
+            android:id="@+id/tv_payment_status_value"
+            android:layout_below="@+id/tv_transaction_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:text="@string/success_string"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/marginProductDetails"
+        android:layout_marginEnd="@dimen/marginProductDetails"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_home_delivery"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_orange_btn_curve"
+            android:fontFamily="@font/open_sans_bold"
+            android:paddingStart="44dp"
+            android:paddingEnd="44dp"
+            android:text="Home"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_my_order"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="44dp"
+            android:layout_marginStart="4dp"
+            android:layout_below="@+id/ll_home_delivery"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_orange_btn_curve"
+            android:fontFamily="@font/open_sans_bold"
+            android:paddingStart="44dp"
+            android:paddingEnd="44dp"
+            android:text="My Order"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>

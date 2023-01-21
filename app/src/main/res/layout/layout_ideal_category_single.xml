@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:id="@+id/ll_ideal_category"
+        style="@style/HomeCategoryLinearLayout">
+
+        <ImageView
+            android:id="@+id/imgIdealCategoryImage"
+            android:layout_width="@dimen/homeCategoryIconSize"
+            android:layout_height="@dimen/homeCategoryIconSize" />
+
+        <TextView
+            android:id="@+id/tvIdealCategoryName"
+            style="@style/HomeCategoryTextViewStyle"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+    </LinearLayout>
+
+</RelativeLayout>

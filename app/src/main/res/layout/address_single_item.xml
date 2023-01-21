@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/marginProductDetails"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="@dimen/marginProductDetails"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_primarydark_round"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv_address_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_delete"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/imgBtnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_toStartOf="@+id/imgBtnDelete"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/delivery_address"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_address_name"
+android:layout_toStartOf="@+id/tv_address_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_address_title"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="Home \n Building 23, Room 34,\n 3rd floor\n Salmiya, Block 10, Kuwait"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_address_name"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/open_sans_regular"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</RelativeLayout>
